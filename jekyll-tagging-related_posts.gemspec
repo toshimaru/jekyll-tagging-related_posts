@@ -6,7 +6,7 @@ require 'jekyll/tagging/related_posts/version'
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-tagging-related_posts"
   spec.version       = Jekyll::Tagging::RelatedPosts::VERSION
-  spec.authors       = ["toshi"]
+  spec.authors       = ["toshimaru"]
   spec.email         = ["me@toshimaru.net"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
@@ -26,6 +26,8 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_runtime_dependency "jekyll-tagging", "~> 1.0.0"
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"

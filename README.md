@@ -1,10 +1,12 @@
+* [LawrenceWoodman/related\_posts-jekyll\_plugin: Replaces jekyll's related\_posts function to use tags to calculate relationships](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)
+* [pattex/jekyll-tagging](https://github.com/pattex/jekyll-tagging)
+
 # Jekyll::Tagging::RelatedPosts
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/tagging/related_posts`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
-[LawrenceWoodman/related\_posts-jekyll\_plugin: Replaces jekyll's related\_posts function to use tags to calculate relationships](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)
 
 ## Installation
 
@@ -40,4 +42,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

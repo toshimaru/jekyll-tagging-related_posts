@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["toshimaru"]
   spec.email         = ["me@toshimaru.net"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Replaces jekyll's related_posts function to use tags to calculate relationships}
+  spec.description   = %q{Replaces jekyll's related_posts function to use tags to calculate relationships}
+  spec.homepage      = "https://github.com/toshimaru/jekyll-tagging-related_posts"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -31,5 +31,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "byebug"
   spec.add_development_dependency "minitest"
 end

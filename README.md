@@ -4,6 +4,8 @@ Welcome to your new gem! In this directory, you'll find the files you need to be
 
 TODO: Delete this and the text above, and describe your gem
 
+[LawrenceWoodman/related\_posts-jekyll\_plugin: Replaces jekyll's related\_posts function to use tags to calculate relationships](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)
+
 ## Installation
 
 Add this line to your application's Gemfile:

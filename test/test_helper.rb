@@ -1,12 +1,16 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'jekyll-tagging-related_posts'
+require 'jekyll'
+require 'jekyll/tagging'
 
 require 'minitest/autorun'
+require 'minitest/reporters'
+Minitest::Reporters.use!
 require 'rspec/mocks'
-require 'jekyll'
 
 class JekyllUnitTest < Minitest::Test
   include ::RSpec::Mocks::ExampleMethods
+  include Jekyll
 
   def mocks_expect(*args)
     RSpec::Mocks::ExampleMethods::ExpectHost.instance_method(:expect).\

@@ -25,6 +25,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "byebug"
   spec.add_development_dependency "minitest"
+  spec.add_development_dependency "minitest-reporters"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-mocks"
+  spec.add_development_dependency "nokogiri"
 end

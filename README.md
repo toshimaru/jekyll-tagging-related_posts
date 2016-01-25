@@ -1,12 +1,13 @@
-* [LawrenceWoodman/related\_posts-jekyll\_plugin: Replaces jekyll's related\_posts function to use tags to calculate relationships](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin)
+
+# jekyll-tagging-related_posts
+
+Jekyll `related_posts` function based on tags (works for only Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.
+
+ The calculation algorithm is based on [LawrenceWoodman/related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin).
+
+## Requirements
+* [Jekyll 3.x](https://github.com/jekyll/jekyll)
 * [pattex/jekyll-tagging](https://github.com/pattex/jekyll-tagging)
-
-# Jekyll::Tagging::RelatedPosts
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/tagging/related_posts`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 
 ## Installation
 
@@ -26,18 +27,36 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Edit `_config.yml` to use the plug-in:
+
+```yml
+gems:
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+```
+
+Then, add related_posts in your post layout.
+
+```liquid
+{% if site.related_posts.size >= 1 %}
+<div>
+  <h3>Related Posts</h3>
+  <ul>
+  {% for related_post in site.related_posts limit: 5 %}
+    <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
+  {% endfor %}
+  </ul>
+</div>
+{% endif %}
+```
 
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-tagging-related_posts. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/toshimaru/jekyll-tagging-related_posts. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## License
 

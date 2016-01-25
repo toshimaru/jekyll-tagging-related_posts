@@ -1,4 +1,5 @@
-require "jekyll"
+require "jekyll/document"
+
 require "jekyll/tagging/related_posts/version"
 require "jekyll/tagging/related_posts"
 

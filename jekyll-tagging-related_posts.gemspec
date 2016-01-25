@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["toshimaru"]
   spec.email         = ["me@toshimaru.net"]
 
-  spec.summary       = %q{Replaces jekyll's related_posts function to use tags to calculate relationships}
-  spec.description   = %q{Replaces jekyll's related_posts function to use tags to calculate relationships}
+  spec.summary       = %q{Replaces Jekyll's related_posts function to use tags to calculate relationships}
+  spec.description   = %q{Replaces Jekyll's related_posts function to use tags to calculate relationships}
   spec.homepage      = "https://github.com/toshimaru/jekyll-tagging-related_posts"
   spec.license       = "MIT"
 

@@ -1,5 +1,8 @@
-
 # jekyll-tagging-related_posts
+
+[![Gem Version](https://badge.fury.io/rb/jekyll-tagging-related_posts.svg)](https://badge.fury.io/rb/jekyll-tagging-related_posts)
+[![Code Climate](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts/badges/gpa.svg)](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts)
+[![Dependency Status](https://gemnasium.com/toshimaru/jekyll-tagging-related_posts.svg)](https://gemnasium.com/toshimaru/jekyll-tagging-related_posts)
 
 Jekyll `related_posts` function based on tags (works for only Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.
 

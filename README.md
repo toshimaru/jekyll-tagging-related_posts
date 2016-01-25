@@ -9,6 +9,7 @@ Jekyll `related_posts` function based on tags (works for only Jekyll3). It repla
  The calculation algorithm is based on [LawrenceWoodman/related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin).
 
 ## Requirements
+* Ruby 2.x
 * [Jekyll 3.x](https://github.com/jekyll/jekyll)
 * [pattex/jekyll-tagging](https://github.com/pattex/jekyll-tagging)
 

@@ -1,5 +1,3 @@
-require "jekyll/tagging/related_posts/version"
-
 module Jekyll
   module Tagging
     module RelatedPosts

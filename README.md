@@ -1,5 +1,6 @@
 # jekyll-tagging-related_posts
 
+[![Build Status](https://travis-ci.org/toshimaru/jekyll-tagging-related_posts.svg?branch=master)](https://travis-ci.org/toshimaru/jekyll-tagging-related_posts)
 [![Gem Version](https://badge.fury.io/rb/jekyll-tagging-related_posts.svg)](https://badge.fury.io/rb/jekyll-tagging-related_posts)
 [![Code Climate](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts/badges/gpa.svg)](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts)
 [![Dependency Status](https://gemnasium.com/toshimaru/jekyll-tagging-related_posts.svg)](https://gemnasium.com/toshimaru/jekyll-tagging-related_posts)

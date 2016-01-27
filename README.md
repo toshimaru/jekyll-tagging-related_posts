@@ -8,7 +8,7 @@
 
 Jekyll `related_posts` function based on tags (works for only Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.
 
- The calculation algorithm is based on [LawrenceWoodman/related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin).
+The calculation algorithm is based on [LawrenceWoodman/related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin).
 
 ## Requirements
 * Ruby 2.x
@@ -41,9 +41,9 @@ gems:
   - jekyll-tagging-related_posts
 ```
 
-Then, add related_posts in your post layout.
+Then, add `site.related_posts` in your post layout.
 
-```liquid
+```liquied
 {% if site.related_posts.size >= 1 %}
 <div>
   <h3>Related Posts</h3>
@@ -62,7 +62,7 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/toshimaru/jekyll-tagging-related_posts. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/toshimaru/jekyll-tagging-related_posts/issues. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
 
 ## License
 

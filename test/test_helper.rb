@@ -6,6 +6,8 @@ require 'jekyll/tagging'
 require 'minitest/autorun'
 require 'minitest/reporters'
 Minitest::Reporters.use!
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
 require 'rspec/mocks'
 
 class JekyllUnitTest < Minitest::Test

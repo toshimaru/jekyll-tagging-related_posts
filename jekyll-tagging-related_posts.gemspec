@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["toshimaru"]
   spec.email         = ["me@toshimaru.net"]
 
-  spec.summary       = %q{Replaces Jekyll's related_posts function to use tags to calculate relationships}
-  spec.description   = %q{Replaces Jekyll's related_posts function to use tags to calculate relationships}
+  spec.summary       = %q{Jekyll `related_posts` function based on tags (works on Jekyll3)}
+  spec.description   = %q{Jekyll `related_posts` function based on tags (works on Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.}
   spec.homepage      = "https://github.com/toshimaru/jekyll-tagging-related_posts"
   spec.license       = "MIT"
 
@@ -24,6 +24,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "byebug"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "minitest-reporters"
 end

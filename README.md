@@ -8,7 +8,7 @@
 
 Jekyll `related_posts` function based on tags (works on Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.
 
-The calculation algorithm is based on [LawrenceWoodman/related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin) by @LawrenceWoodman.
+The calculation algorithm is based on [related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin) by [@LawrenceWoodman](https://github.com/LawrenceWoodman).
 
 ## Requirements
 * Ruby 2.x

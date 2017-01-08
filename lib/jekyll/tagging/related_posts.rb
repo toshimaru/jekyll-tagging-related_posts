@@ -12,6 +12,7 @@ module Jekyll
       # Returns [<Post>]
       def related_posts
         return [] unless docs.count > 1
+
         highest_freq = tag_freq.values.max
         related_scores = Hash.new(0)
 
@@ -33,7 +34,7 @@ module Jekyll
       # Returns {tag => freq, tag => freq, ...}
       def tag_freq
         @tag_freq ||= docs.inject(Hash.new(0)) do |tag_freq, doc|
-          doc.data["tags"].each {|tag| tag_freq[tag] += 1 }
+          doc.data["tags"].each { |tag| tag_freq[tag] += 1 }
           tag_freq
         end
       end
@@ -49,7 +50,7 @@ module Jekyll
           else
             b[0].date <=> a[0].date
           end
-        end.collect {|post, freq| post}
+        end.collect { |post, freq| post }
       end
 
       def docs

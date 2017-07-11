@@ -13,3 +13,8 @@ gemfile:
   - gemfiles/jekyll_3.2.gemfile
   - gemfiles/jekyll_3.1.gemfile
   - gemfiles/jekyll_3.gemfile
+after_success:
+  - bundle exec codeclimate-test-reporter
+addons:
+  code_climate:
+    repo_token: 03d64532821ff06fd0cf9ae57dacc81b2322ac37ed14c5cfbb90ffea40e9c7fb

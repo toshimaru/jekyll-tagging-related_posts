@@ -1,3 +1,11 @@
+appraise "jekyll-3.5" do
+  gem "jekyll", "3.5.0"
+end
+
+appraise "jekyll-3.4" do
+  gem "jekyll", "3.4.4"
+end
+
 appraise "jekyll-3.3" do
   gem "jekyll", "3.3.1"
 end

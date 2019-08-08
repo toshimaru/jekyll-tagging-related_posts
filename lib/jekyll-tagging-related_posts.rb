@@ -1,4 +1,6 @@
-# require `jekyll/document` first to overide `Jekyll::Document`
+# frozen_string_literal: true
+
+# requiring `jekyll/document` first to overide `Jekyll::Document`
 require "jekyll/document"
 
 require "jekyll/tagging/related_posts/version"

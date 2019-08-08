@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Jekyll
   module Tagging
     module RelatedPosts
@@ -50,7 +52,7 @@ module Jekyll
           else
             b[0].date <=> a[0].date
           end
-        end.collect { |post, freq| post }
+        end.collect { |post, _freq| post }
       end
 
       def docs

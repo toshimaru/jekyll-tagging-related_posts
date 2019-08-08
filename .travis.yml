@@ -2,17 +2,16 @@ language: ruby
 cache: bundler
 before_install: gem update bundler
 rvm:
-  - 2.1
-  - 2.2
-  - 2.3.1
-  - 2.4.1
+  - 2.3.8
+  - 2.4.6
+  - 2.5.5
+  - 2.6.3
+# Put this in your .travis.yml
 gemfile:
+  - gemfiles/jekyll_3.8.gemfile
+  - gemfiles/jekyll_3.7.gemfile
+  - gemfiles/jekyll_3.6.gemfile
   - gemfiles/jekyll_3.5.gemfile
-  - gemfiles/jekyll_3.4.gemfile
-  - gemfiles/jekyll_3.3.gemfile
-  - gemfiles/jekyll_3.2.gemfile
-  - gemfiles/jekyll_3.1.gemfile
-  - gemfiles/jekyll_3.gemfile
 after_success:
   - bundle exec codeclimate-test-reporter
 addons:

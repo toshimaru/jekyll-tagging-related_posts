@@ -13,7 +13,6 @@ The calculation algorithm is based on [related\_posts-jekyll\_plugin](https://gi
 
 * Ruby 2.3+
 * [Jekyll](https://github.com/jekyll/jekyll) 3.5+
-* [pattex/jekyll-tagging](https://github.com/pattex/jekyll-tagging)
 
 ## Installation
 
@@ -37,7 +36,6 @@ Edit `_config.yml` to use the plug-in:
 
 ```yml
 gems:
-  - jekyll/tagging
   - jekyll-tagging-related_posts
 ```
 

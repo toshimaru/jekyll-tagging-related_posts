@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'simplecov'
 SimpleCov.start
 
 require 'jekyll-tagging-related_posts'
 require 'jekyll'
-require 'jekyll/tagging'
 
 require 'minitest/autorun'
 require 'minitest/reporters'

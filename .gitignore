@@ -8,5 +8,6 @@
 /spec/reports/
 /tmp/
 /test/dest
-
+/test/source
+/gemfiles/.bundle/
 *.gemfile.lock

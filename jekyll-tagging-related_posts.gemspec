@@ -22,13 +22,5 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = ">= 2.3"
 
-  spec.add_runtime_dependency "jekyll", ">= 3.5", "< 5.0"
-
-  spec.add_development_dependency "appraisal"
-  spec.add_development_dependency "bundler"
-  spec.add_development_dependency "byebug"
-  spec.add_development_dependency "codeclimate-test-reporter"
-  spec.add_development_dependency "minitest-reporters"
-  spec.add_development_dependency "minitest"
-  spec.add_development_dependency "rake"
+  spec.add_runtime_dependency "jekyll", ">= 3.9", "< 5.0"
 end

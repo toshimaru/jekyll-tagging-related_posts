@@ -1,10 +1,11 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'simplecov'
 SimpleCov.start
 
 require 'jekyll-tagging-related_posts'
 require 'jekyll'
-require 'jekyll/tagging'
 
 require 'minitest/autorun'
 require 'minitest/reporters'
@@ -17,19 +18,20 @@ class JekyllUnitTest < Minitest::Test
     Jekyll::Site.new(site_configuration(overrides))
   end
 
-  def build_configs(overrides, base_hash = Jekyll::Configuration::DEFAULTS)
+  def build_configs(overrides, base_hash = default_configuration)
     Utils.deep_merge_hashes(base_hash, overrides)
-      .fix_common_issues.backwards_compatibilize.add_default_collections
+  end
+
+  def default_configuration
+    Marshal.load(Marshal.dump(Jekyll::Configuration::DEFAULTS))
   end
 
   def site_configuration(overrides = {})
-    full_overrides = build_configs(overrides, build_configs({
+    full_overrides = build_configs(overrides, build_configs(
       "destination" => dest_dir,
       "incremental" => false
-    }))
-    build_configs({
-      "source" => source_dir
-    }, full_overrides)
+    ))
+    Configuration.from(full_overrides.merge("source" => source_dir))
   end
 
   def dest_dir(*subdirs)

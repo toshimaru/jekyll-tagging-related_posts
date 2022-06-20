@@ -28,3 +28,17 @@ jobs:
         bundler-cache: true
     - name: Run Test
       run: bundle exec rake
+  coverate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby ${{ matrix.ruby }}
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+      - uses: paambaati/codeclimate-action@v3.0.0
+        env:
+          CC_TEST_REPORTER_ID: 03d64532821ff06fd0cf9ae57dacc81b2322ac37ed14c5cfbb90ffea40e9c7fb
+        with:
+          coverageCommand: bundle exec rake

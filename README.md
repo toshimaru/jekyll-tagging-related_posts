@@ -11,8 +11,8 @@ The calculation algorithm is based on [related\_posts-jekyll\_plugin](https://gi
 
 ## Requirements
 
-* Ruby 2.3+
-* [Jekyll](https://github.com/jekyll/jekyll) 3.5+
+* Ruby 2.6+
+* [Jekyll](https://github.com/jekyll/jekyll) 3.9+
 
 ## Installation
 

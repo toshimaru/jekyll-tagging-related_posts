@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = %q{Jekyll `related_posts` function based on tags (works on Jekyll3). It replaces original Jekyll's `related_posts` function to use tags to calculate relationships.}
   spec.homepage = "https://github.com/toshimaru/jekyll-tagging-related_posts"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 2.7.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage

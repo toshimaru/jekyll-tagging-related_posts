@@ -9,11 +9,6 @@ Jekyll `related_posts` function based on tags (works on Jekyll3). It replaces or
 
 The calculation algorithm is based on [related\_posts-jekyll\_plugin](https://github.com/LawrenceWoodman/related_posts-jekyll_plugin) by [@LawrenceWoodman](https://github.com/LawrenceWoodman).
 
-## Requirements
-
-* Ruby 2.6+
-* [Jekyll](https://github.com/jekyll/jekyll) 3.9+
-
 ## Installation
 
 Add this line to your application's Gemfile:

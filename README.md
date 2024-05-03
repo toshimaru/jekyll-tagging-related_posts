@@ -1,6 +1,6 @@
 # jekyll-tagging-related_posts
 
-[![Build Status](https://travis-ci.org/toshimaru/jekyll-tagging-related_posts.svg?branch=master)](https://travis-ci.org/toshimaru/jekyll-tagging-related_posts)
+[![Test](https://github.com/toshimaru/jekyll-tagging-related_posts/actions/workflows/test.yml/badge.svg)](https://github.com/toshimaru/jekyll-tagging-related_posts/actions/workflows/test.yml)
 [![Gem Version](https://badge.fury.io/rb/jekyll-tagging-related_posts.svg)](https://badge.fury.io/rb/jekyll-tagging-related_posts)
 [![Test Coverage](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts/badges/coverage.svg)](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts/coverage)
 [![Code Climate](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts/badges/gpa.svg)](https://codeclimate.com/github/toshimaru/jekyll-tagging-related_posts)
@@ -11,7 +11,7 @@ The calculation algorithm is based on [related\_posts-jekyll\_plugin](https://gi
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
 ```ruby
 gem 'jekyll-tagging-related_posts'

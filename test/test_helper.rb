@@ -2,7 +2,15 @@
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'simplecov'
-SimpleCov.start
+require 'simplecov_json_formatter'
+SimpleCov.start do
+  enable_coverage :branch
+  formatter SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::JSONFormatter,
+    SimpleCov::Formatter::HTMLFormatter
+  ])
+  add_filter '/test/'
+end
 
 require 'jekyll-tagging-related_posts'
 require 'jekyll'

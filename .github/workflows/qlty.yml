@@ -21,7 +21,7 @@ jobs:
           bundler-cache: true
       - name: Run tests with coverage
         run: bundle exec rake
-      - uses: qltysh/qlty-action/coverage@v1
+      - uses: qltysh/qlty-action/coverage@v2
         with:
           oidc: true
           files: coverage/coverage.json

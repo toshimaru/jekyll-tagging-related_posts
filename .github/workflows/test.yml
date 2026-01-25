@@ -17,6 +17,20 @@ jobs:
           - gemfiles/jekyll_4.1.gemfile
           - gemfiles/jekyll_4.2.gemfile
           - gemfiles/jekyll_4.3.gemfile
+        exclude:
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_3.9.gemfile
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_4.0.gemfile
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_4.1.gemfile
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_4.2.gemfile
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_4.3.gemfile
+        include:
+          - ruby: '3.4'
+            gemfile: gemfiles/jekyll_4.4.gemfile
     env:
       BUNDLE_GEMFILE: ${{ matrix.gemfile }}
     runs-on: ubuntu-latest

@@ -11,3 +11,5 @@
 /test/source
 /gemfiles/.bundle/
 *.gemfile.lock
+/vendor/
+/gemfiles/vendor/

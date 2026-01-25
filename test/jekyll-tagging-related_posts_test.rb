@@ -13,9 +13,6 @@ class TestPage < JekyllUnitTest
 
   def test_related_posts
     assert_instance_of Array, @document.related_posts
-  end
-
-  def test_related_posts
     assert_instance_of Jekyll::Document, @document.related_posts.first
   end
 

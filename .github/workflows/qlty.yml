@@ -1,0 +1,27 @@
+name: Qlty
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2
+          bundler-cache: true
+      - name: Run tests with coverage
+        run: bundle exec rake
+      - uses: qltysh/qlty-action/coverage@v1
+        with:
+          oidc: true
+          files: coverage/coverage.json
